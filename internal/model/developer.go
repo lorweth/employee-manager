@@ -15,7 +15,7 @@ func (d Developer) Info() AbstractEmployee {
 }
 
 func (d Developer) Salary() float64 {
-	return float64(d.BasePay) * float64(d.Overtime)
+	return float64(d.BasePay) + (float64(d.Overtime) * 200000)
 }
 
 func (d Developer) String() string {
